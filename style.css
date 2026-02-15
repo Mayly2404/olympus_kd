@@ -1,0 +1,205 @@
+@font-face
+{
+    font-family: "MYRIADPRO-REGULAR";
+    src: url(font/MYRIADPRO-REGULAR.OTF) format("truetype");
+    font-weight: normal;
+    font-style: normal;    
+}
+
+
+html, body
+{
+    height: 100%;
+}
+
+body
+{
+    margin: 0;
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card_question
+{
+    position: absolute;
+    left: 80px;
+    top: 60px;
+
+    font-family: "MYRIADPRO-REGULAR", sans-serif;
+    font-size: 24px;
+    
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    padding: 16px;
+    width: 900px;
+    height: 450px;
+    box-sizing: border-box;
+
+    padding: 0;
+    overflow: hidden;
+}
+
+.q_header
+{
+    height: 56px;
+    padding: 0 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 24px;
+}
+
+.q_divider
+{
+    height: 1px;
+    background: rgba(0, 0, 0, 0.12);
+    margin: 0 18px;
+}
+
+.question
+{
+    padding: 18px;
+    font-size: 32px;
+    line-height: 1.35;
+    text-align: justify;
+}
+
+.contestant
+{
+    /*position: absolute;
+    right: 80px;
+    top: 60px;*/
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 240px;
+    height: 70px;
+    padding: 0 18px;
+
+    border-radius: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    background: #fff;
+    color: #111;
+}
+
+.contestant .name
+{
+    font-family: "MYRIADPRO-REGULAR", sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.contestant .point
+{
+    font-family: "MYRIADPRO-REGULAR", sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.contestant.buzzer
+{
+  border: none;
+  color: #fff;
+  background: linear-gradient(135deg, #ff3b3b, #b40000);
+}
+
+.contestants
+{
+    position: absolute;
+    top: 60px;
+    right: 80px;
+
+    height: 450px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.buzzer_btn
+{
+    width: 900px;
+    height: 120px;
+
+    border-radius: 22px;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "MYRIADPRO-REGULAR", sans-serif;
+    font-size: 28px;
+    letter-spacing: 0.5px;
+    user-select: none;
+}
+
+.buzzer_btn.locked
+{
+    background: rgba(255, 255, 255, 0.06);
+    border: 2px dashed rgba(180, 180, 180, 0.55);
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.buzzer_btn.open
+{
+    border: none;
+    color: #fff;
+    background: #b28dff;
+}
+
+.buzzer_area
+{
+    position: absolute;
+    left: 80px;
+    top: 575px;
+}
+
+.time_limit
+{
+    position: absolute;
+    right: 80px;
+    top: 575px;
+
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    padding: 16px;
+    width: 240px;
+    height: 120px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 16px;
+}
+
+.tl_title
+{
+    font-family: "MYRIADPRO-REGULAR", sans-serif;
+    text-align: center;
+    font-size: 18px;
+    font-weight: normal;
+
+    transform: translateY(6px);
+}
+
+.tl_time
+{
+    font-family: "MYRIADPRO-REGULAR", sans-serif;
+    text-align: center;
+    font-size: 44px;
+    font-weight: normal;
+    line-height: 1;
+
+    transform: translateY(6px);
+}
